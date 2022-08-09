@@ -148,18 +148,17 @@
                 @include font(16px);
             }
         }
-    }
-
-    .page-back,.page-next {
-        padding: 11px 12px;
-        font-size: 19px;
-        line-height: 29px;
-        @include phone{
-            padding: 11px 13px 12px 14px;
-            font-size: 16px;
-            line-height: 26px;
+        .page-back,.page-next {
+            padding: 11px 12px;
+            font-size: 19px;
+            line-height: 29px;
+            @include phone{
+                padding: 11px 13px 12px 14px;
+                font-size: 16px;
+                line-height: 26px;
+            }
         }
+        
     }
-    
 
 }
