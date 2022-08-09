@@ -1,0 +1,165 @@
+@import "./variable.scss";
+@import "./reset.scss";
+@import "./base.scss";
+@import "./mixin.scss";
+@import "./layout.scss";
+
+.product-type {
+    li {
+        width: 33.33%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-right: 1px solid #DCDCDC;
+        border-left: 1px solid #DCDCDC;
+
+        @include pad {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        a {
+            text-align: center;
+            color: $dark;
+            @include font(32px);
+
+            @include pad {
+                @include font(24px);
+            }
+
+            @include phone {
+                @include font(16px);
+            }
+        }
+    }
+
+    .optical {
+        border-bottom: 8px solid $primary;
+    }
+}
+
+.optical-banner {
+    li {
+        width: 50%;
+    }
+}
+
+.frame {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h3 {
+        text-align: center;
+        @include font(42px);
+
+        @include phone {
+            @include font(24px);
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 32px;
+        @include font(32px);
+
+        @include phone {
+            margin-bottom: 24px;
+            @include font(24px);
+        }
+    }
+
+    >ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px 24px;
+
+        @include pad {
+            gap: 40px 24px;
+        }
+
+        @include phone {
+            gap: 24px 0px;
+        }
+
+        >li {
+            width: 23.15%;
+
+            @include pad {
+                width: 48.38%;
+            }
+
+            @include phone {
+                width: 100%;
+            }
+
+            p {
+                @include font(24px);
+            }
+        }
+    }
+
+
+    .product-info {
+        justify-content: space-between;
+
+    }
+
+    .product-color {
+        gap: 8px;
+        li{
+            &:hover{
+                border: 1px solid $dark;
+                border-radius: 4px;
+            }
+        }
+        
+        .product-color-brown {
+            @include product-color($product-color-brown);
+        }
+
+        .product-color-orange {
+            @include product-color($product-color-orange);
+        }
+
+    }
+}
+
+.page {
+    margin-bottom: 80px;
+    @include phone{
+        margin-bottom: 64px;
+    }
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        border: 1px solid $gray;
+        a{
+            display: block;
+            color: $gray;
+            padding: 12px 16px;
+            @include font(18px);
+            &:hover{
+                color: $light;
+                background-color: $dark;
+            }
+            @include phone{
+                padding: 12px 15px;
+                @include font(16px);
+            }
+        }
+    }
+
+    .page-back,.page-next {
+        padding: 11px 12px;
+        font-size: 19px;
+        line-height: 29px;
+        @include phone{
+            padding: 11px 13px 12px 14px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    
+
+}
