@@ -1516,14 +1516,14 @@ img {
           padding: 12px 15px;
           font-size: 16px;
           line-height: 1.5; } }
-  .page .page-back, .page .page-next {
-    padding: 11px 12px;
-    font-size: 19px;
-    line-height: 29px; }
-    @media (max-width: 767px) {
-      .page .page-back, .page .page-next {
-        padding: 11px 13px 12px 14px;
-        font-size: 16px;
-        line-height: 26px; } }
+    .page li .page-back, .page li .page-next {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 29px; }
+      @media (max-width: 767px) {
+        .page li .page-back, .page li .page-next {
+          padding: 11px 13px 12px 14px;
+          font-size: 16px;
+          line-height: 26px; } }
 
 /*# sourceMappingURL=all.css.map */
